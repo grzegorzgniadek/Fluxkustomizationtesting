@@ -24,3 +24,4 @@ spec:
     ingress:
       enabled: true
       className: nginx
+    testing: ${DATABASE}

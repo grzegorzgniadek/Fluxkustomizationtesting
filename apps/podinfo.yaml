@@ -12,3 +12,8 @@ spec:
   path: "./apps/podinfo"
   prune: true
   timeout: 1m
+  postBuild:
+    substituteFrom:
+      - kind: Secret
+        name: test1
+        # Fail if this Secret does not exist.
