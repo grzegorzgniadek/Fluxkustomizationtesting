@@ -8,7 +8,7 @@ spec:
   interval: 10m
   sourceRef:
     kind: GitRepository
-    name: flux-system
+    name: pod-info
   path: "./apps/podinfo"
   prune: true
   timeout: 1m
