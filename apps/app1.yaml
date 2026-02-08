@@ -2,19 +2,18 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: podinfo
-  namespace: podinfo
+  name: app1
+  namespace: app1
 spec:
   interval: 1m
   sourceRef:
     kind: GitRepository
     name: flux-system
     namespace: flux-system
-  path: "./apps/podinfo"
+  path: "./apps/app1"
   prune: true
   timeout: 1m
   postBuild:
     substituteFrom:
       - kind: Secret
         name: test1
-        # Fail if this Secret does not exist.
