@@ -4,12 +4,9 @@ metadata:
   name: app1
 spec:
   releaseName: app1
-  chart:
-    spec:
-      chart: app1
-      sourceRef:
-        kind: HelmChart
-        name: app1
+  chartRef:
+    kind: HelmChart
+    name: app1
   interval: 5m
   install:
     remediation:
