@@ -17,3 +17,4 @@ spec:
     substituteFrom:
       - kind: Secret
         name: test1
+        optional: true
