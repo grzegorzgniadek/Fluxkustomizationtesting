@@ -1,0 +1,10 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: app1
+spec:
+  interval: 5m0s
+  url: https://github.com/grzegorzgniadek/Fluxkustomizationtesting
+  ref:
+    branch: master

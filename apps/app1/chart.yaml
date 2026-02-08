@@ -6,5 +6,5 @@ spec:
   chart: ./charts/app1
   sourceRef:
     kind: GitRepository
-    name: flux-system
+    name: app1
   interval: 5m
